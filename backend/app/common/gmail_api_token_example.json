@@ -1,0 +1,9 @@
+{
+  "token": "blabla",
+  "refresh_token": "blabla",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "client_id": "blabla",
+  "client_secret": "blabla",
+  "scopes": ["https://mail.google.com/"],
+  "expiry": "blabla"
+}

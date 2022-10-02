@@ -1,0 +1,7 @@
+FROM node:14
+
+COPY ./app /src
+
+COPY ./deploy/node-entrypoint.sh /node-entrypoint.sh
+RUN chmod u+x /node-entrypoint.sh
+ENTRYPOINT /node-entrypoint.sh

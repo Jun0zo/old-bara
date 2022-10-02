@@ -1,0 +1,9 @@
+version: "3.1"
+
+services:
+  node:
+    build:
+      context: .
+      dockerfile: ./deploy/node_dockerfile
+    volumes:
+      - ./deploy/public/build:/src/public/build

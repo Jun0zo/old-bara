@@ -1,0 +1,114 @@
+:root {
+  --bara-body-bg: #fafbfe;
+  --bara-body-color: #6c757d;
+  --bara-body-font-family:Nunito,sans-serif;
+
+  --bara-card-box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
+  --bara-card-border-radius: 0.25rem;
+  --bara-card-head-background-color:rgb(249, 250, 253);
+  
+  
+  --bara-navbar-background-color:white;
+  --bara-navbar-light-brand-color: #2c7be5;
+  --bara-navbar-shadow:0 0.5rem 0.5rem -0.5rem rgb(0 0 0 / 20%) !important;
+  
+
+  --bara-info-rgb: rgb(40 187 253);
+  --bara-main-padding: 100px;
+  --bara-main-margin: 100px;
+  --bara-wrapper-padding: 24px;
+
+  --bara-side-navbar-width: 230px;
+  --bara-side-navbar-small-width: 70px;
+  --bara-side-navbar-box-shadow: 0 7px 14px 0 rgba(65, 69, 88, 0.1),
+    0 3px 6px 0 rgba(0, 0, 0, 0.07);
+  --bara-side-navbar-background-color:#313a46;
+  --bara-side-navbar-vertical-link-color: #6c757d;
+  --bara-side-navbar-vertical-link-active-color: white;
+  --bara-side-navbar-vertical-link-hover-color: #bccee4;
+
+  --bara-dropdown-border-color:#e7ebf0;
+  --bara-dropdown-link-hover-background-color:#f2f5f9;
+
+  --bara-card-title-color: #6c757d;
+
+  --bara-text-mutted: #98a6ad;
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--bara-body-bg);
+  color: #333;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.nav-bar-shadow {  /* apply shadow to navbar when scroll down */
+  box-shadow: var(--bara-navbar-shadow);
+}
+
+input:disabled {
+  color: #ccc;
+}
+
+button {
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none;
+}
+
+button:disabled {
+  color: #999;
+}
+
+button:focus {
+  border-color: #666;
+}
+
+.mdc-data-table {
+  border:0px !important;
+
+}
+
+.mdc-data-table tr:nth-child(odd) {
+  /* background-color:#f1f3f9; */
+}
+
+.show {
+  display:block !important;
+}
+
+.p-0 {
+  padding: 0px;
+}
+.pt-0 {
+  padding-top: 0px;
+}
+.pl-0 {
+  padding-left: 0px;
+}
+.pb-0 {
+  padding-left: 0px;
+}
+.pr-0 {
+  padding-right: 0px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+
+.d-none {
+  display: none;
+}

@@ -1,0 +1,24 @@
+version: "3.1"
+
+services:
+  db:
+    build:
+      context: .
+      dockerfile: ./deploy/db_dockerfile
+    env_file: ./deploy/.env
+    volumes:
+      - ./deploy/db/data:/var/lib/mysql
+    expose:
+      - "3306"
+    environment:
+      TZ: Asia/Seoul
+
+  web:
+    build:
+      context: .
+      dockerfile: ./deploy/web_dockerfile
+    env_file: ./deploy/.env
+    ports:
+      - 8000:80
+    depends_on:
+      - db
